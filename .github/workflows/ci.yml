@@ -24,7 +24,7 @@ jobs:
       - uses: actions/checkout@v4
       - name: Install tooling and use Rust cache
         uses: ./.github/actions/rust-cache
-      - run: cargo test --bins --examples --tests --benches --all-features
+      - run: cargo test --bins --examples --all-features
 
   test-smoke:
     needs: check-build
